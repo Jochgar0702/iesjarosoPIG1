@@ -1,4 +1,6 @@
 Proyecto Intermodular
+Esquema del proyecto:
+<img width="1048" height="651" alt="Image" src="https://github.com/user-attachments/assets/8109826f-d7ec-43d5-a1dd-cb877d9f2984" />
 Explicación del proyecto:
 Proyecto de riego automatizado para dos comunidades de regantes
 El sistema se basa en una balsa (depósito de agua) que almacena el volumen necesario para riego. Desde esta balsa, una bomba impulsa el agua hacia la red de distribución principal.

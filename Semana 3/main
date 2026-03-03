@@ -295,7 +295,7 @@ void tareaElectrovalvula2( void * pvParameters )
 {
     //Configuración actuador EV2 gpio 19
     gpio_config_t configActEv2 = {
-        .pin_bit_mask = MASKPINACTEV1,
+        .pin_bit_mask = MASKPINACTEV2,
         .mode = GPIO_MODE_OUTPUT,
         .pull_up_en = GPIO_PULLUP_DISABLE,
         .pull_down_en = GPIO_INTR_DISABLE
@@ -308,7 +308,7 @@ void tareaElectrovalvula2( void * pvParameters )
     {
         xQueueReceive(h_colaElectrovalvula2, &dato, portMAX_DELAY);
         gpio_set_level(PINACTEV2, dato);
-        ESP_LOGI(TAG, "Dato recibido en area EV1 %d", dato);
+        ESP_LOGI(TAG, "Dato recibido en area EV2 %d", dato);
     }
 }
 void tareaEnvioMQTT1 (void * pvParameters )
